@@ -1,0 +1,843 @@
+nav {
+  width: 100%;
+  height: 35px;
+  background:#d7d7d7;
+  border-top:1px solid #f79956;
+}
+/* Main navigration start*/
+.rmm {
+	
+
+	width:100%;
+  display: block;
+  position: relative;
+  margin: 0 auto !important;
+  text-align: center;
+  line-height: 8px !important;
+  z-index: 99999;
+  color:#3f3f3f;
+  text-transform: uppercase !important;
+}
+
+.rmm * {
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.rmm a {
+  color: #3f3f3f;
+  text-decoration: none;
+}
+
+.rmm .rmm-main-list, .rmm .rmm-main-list li {
+  margin: 0px;
+  padding: 0px;
+}
+
+.rmm ul {
+  display: block;
+  width: auto !important;
+  margin: 0 auto !important;
+  overflow: hidden;
+  list-style: none;
+}
+/* sublevel menu - in construction */
+.rmm ul li ul, .rmm ul li ul li, .rmm ul li ul li a {
+  display: none !important;
+  height: 0px !important;
+  width: 0px !important;
+}
+
+.rmm .rmm-main-list li {
+  display: inline;
+  padding: padding:0px;
+  margin: 0px !important;
+}
+
+.rmm-toggled {
+  display: none;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto !important;
+}
+
+.rmm-button:hover {
+  cursor: pointer;
+}
+
+.rmm .rmm-toggled ul {
+  display: none;
+  margin-top: 4px !important;
+  padding: 0px !important;
+  
+}
+
+.rmm .rmm-toggled ul li {
+  display: block;
+  margin: 0 auto !important;
+  
+}
+/* GRAPHITE STYLE */
+.rmm.graphite .rmm-main-list li a {
+  display: inline-block;
+  padding: 14px 15px 11px 15px;
+  font-size: 18px;
+  /*border-top:3px solid #d7d7d7;*/
+  
+}
+
+.rmm.graphite .rmm-main-list li a:hover {
+ border-top:3px solid #f57f2c;
+  color: #3f3f3f;
+  padding:11px 15px;
+}
+
+.rmm.graphite .rmm-toggled {
+  width: 100%;
+  min-height: 30px;
+}
+
+.rmm.graphite .rmm-toggled-controls {
+  display: block;
+  height: 30px;
+  color: white;
+  text-align: left;
+  position: relative;
+}
+
+.rmm.graphite .rmm-button {
+  display: block;
+  position: absolute;
+  right: 15px;
+  background: rgba(0, 0, 0, 0) url("../../Images/icons/iconMobMenu.png") no-repeat scroll right center;
+  padding: 13px 0;
+  
+}
+.rmm-button::before {
+    color: #696969;
+    content: "Menu";
+    padding-right: 35px;
+    font-size:18px;
+}
+.rmm.graphite .rmm-button span {
+  display: none;
+  margin-top: 4px;
+  height: 2px;
+  background: white;
+  width: 24px;
+}
+
+.rmm.graphite .rmm-toggled ul li a {
+  display: block;
+  width: 100%;
+  background-color: #696969;
+  text-align: center;
+  padding: 15px 0;
+  color: #e7e7e7;
+  border-bottom: 1px solid #858585;
+}
+
+
+
+.rmm.graphite .rmm-toggled ul li a:active {
+  background-color: #444444;
+}
+
+.rmm.graphite .rmm-toggled ul li a:hover {
+  background-color: #696969;
+}
+
+.rmm li a.active {
+  color: #fff;
+  background-color: #33adb3;
+}
+
+.rmm.graphite.rmm li a.active {
+  background-color: #33adb3;
+  color: #fff;
+}
+.rmm-toggled-controls p {
+    color: #000;
+    float: right;
+    margin: 14px 50px 0 0;
+    padding: 0;
+}
+.col-lg-8, .homeUserLoginMain {
+    float: right;
+}
+.quickgrid_enz1{
+	width: 100%; 
+	min-height: 40px;
+	height: auto;
+	padding: 5px 0; 
+	float:left;
+}
+.signrightbox select {
+    width: 5.8cm;
+}
+.engbtn_mid_all{
+	width:280px;
+	margin:0 Auto;
+}
+.engbtn_mid_all01{
+	width:170px;
+	margin:0 Auto;
+}
+.engbtn_mid_all02{
+	width:230px;
+	margin:0 Auto;
+}
+.engbtn_mid_all03{
+	width:200px;
+	margin:0 Auto;
+}
+.engbtn_mid_all_278{
+	width:250px;
+	margin:0 Auto;
+}
+.line_regbuttonboxlb {
+    border-top: 1px solid #dfdfdf;
+    margin: 0;
+    padding-top: 20px;
+    width: 100%;
+}
+.regularclass{
+	width:100%;
+	float:left;
+	height:auto;
+	min-hight:10px;	
+}
+.fordetailpaymentI{
+	margin-top:20px;
+}
+#paySubTable td {
+    color: #5c5c5c;
+    text-align: center;
+    font-weight: normal;
+}
+.tranction_holderbox1{
+	width:38%;
+	margin-right: 2%;
+	float:left;
+	font-size:18px;
+	text-align:right;
+}
+.tranction_holderbox2{
+	width:60%;
+	float:left;
+}
+.btn_left_global{
+	width:50%;
+	float:left;
+}
+.btn_right_global{
+	width:48%;
+	float:left;
+	margin-left:2%;
+}
+.slicknav_menu,
+.js #menu_mob {
+    display: none;
+}
+.slicknav_nav > li {
+    background: #858585 none repeat scroll 0 0;
+}
+
+.slicknav_nav ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.slicknav_nav .slicknav_row {
+    padding: 5px 10px;
+    margin: 0;
+    border-bottom: 1px solid #fff;
+}
+.slicknav_nav a {
+    padding: 5px 10px;
+    margin: 0px;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+}
+.slicknav_menu {
+    font-size: 16px;
+    padding: 0;
+}
+.slicknav_btn {
+    margin: 0px;
+    text-decoration: none;
+    background-color: #858585;
+}
+.slicknav_btn {
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    float: left;
+    padding: 0;
+    line-height: 1.125em;
+    cursor: pointer;
+}
+.slicknav_menu .slicknav_icon-bar {
+    display: none;
+    width: 1.125em;
+    height: 0.125em;
+    background: #fff;
+}
+.slicknav_icon.slicknav_no-text {
+    background: rgba(0, 0, 0, 0) url("../../Images/icons/sidemenu_btn.png") no-repeat scroll center center;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    width: 42px;
+}
+.slicknav_nav {
+    margin: 0;
+    padding: 0;
+    font-size: 0.875em;
+    list-style: none;
+    overflow: hidden;
+}
+.slicknav_nav .slicknav_arrow {
+    font-size: 0.8em;
+    margin:5px 0 0 0;
+    float: right;
+    color:#f6f6f6;
+    opacity: 0.8;
+}
+.slicknav_menu .slicknav_icon {
+    float: left;
+    margin: 0.188em 0 0 0.438em;
+}
+.slicknav_menu .slicknav_no-text {
+    margin: 0;
+}
+.slicknav_nav {
+    clear: both;
+}
+.slicknav_nav .slicknav_row {
+    display: block;
+}
+.slicknav_nav a {
+    display: block;
+}
+.slicknav_nav .slicknav_parent-link a {
+    display: inline;
+}
+
+.sidemenu_mob2 {
+    color: #000;
+}
+.sidemenu_mob1 a{
+	color:#f6f6f6;
+	font-size: 20px;
+}
+.sidemenu_mob1  li a{
+	color:#545454;
+}
+.sidemenu_mob2 a {
+    background: #d7d7d7 none repeat scroll 0 0;
+    color: #545454;
+    font-size: 18px;
+}
+.sidemenu_mob3 a {
+    background: #f6f6f6 none repeat scroll 0 0;
+    color: #545454;
+}
+.bookholder_UG{
+	margin:20px;
+}
+.fl {
+    float: left;
+}
+.vbp_grid1{
+	float:left;
+	width:40%;
+	padding-left:2%;
+}
+.vbp_grid2{
+	float:left;
+	width:25%;
+	padding-left:2%;
+	text-align: right;
+}
+.paymentthrough {
+    float: left;
+    width: 30%;
+    padding-left: 3.3%;
+    background: #e87231 none repeat scroll 0 0;
+}
+.Billtype_usc{
+	width:200px;
+}
+.User_Details_SEPARATE{
+	width:50%;
+	float:left;
+}
+.pickdateholder.hasDatepicker {
+    width: 190px;
+}
+.singlebtnwrapper{
+	width: 150px;
+	margin:0 auto;
+}
+.singlebtnwrapper1{
+	width: 80px;
+	margin:0 auto;
+}
+.crsTableWrapperfixer{
+	width:100%;
+	overflow: auto;
+    margin-top: 20px;
+}
+.crsTableWrapperscroller{
+	width:900px;
+}
+.toppergridlogo_counter{
+	width:50%;
+	min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    float: left;
+}
+
+/**************BREAK POINT**************/
+@media only screen and (min-width: 1000px) {
+	.logo_mob img {
+	    display: none;
+	}
+	.error_home{
+		margin:0 15px;
+	}
+}
+/**************BREAK POINT**************/
+@media only screen and (max-width: 1020px){
+	.js #menu_mob {
+        display: none;
+    }
+    .js .slicknav_menu {
+    	display: block;
+	    float: left;
+	    margin:123px 2% 0;
+	    position: absolute;
+	    width: 96%;
+	    z-index: 22;
+    }	
+	.homeUserLoginMain{
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(59,59,59,0.4);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(59,59,59,0.4);
+	box-shadow: 0px 0px 2px 1px rgba(59,59,59,0.4);
+	margin-top: 20px;
+	background: #fff none repeat scroll 0 0;
+    border-radius: 6px;
+    margin-right: 3%;
+    width: 47%;
+    float:left;
+	}
+	.homeLeftBlurb {
+    float: left !important;
+    margin-top: 0px !important;
+    width: 100%;
+    height: 80px;
+	}
+	.homeLeftBlurbImage {
+    margin-top: 10px;
+	}
+	.homeLeftBlurbTxt {
+    padding-top: 10px;
+    width: 70%;
+	}
+	.homeLeftBlurbTxt h1 {
+    padding-bottom: 0;
+    width: 100%;
+	}
+	.row {
+    margin-left: 0;
+    margin-right: 0;
+	}
+	.homeLeftBlurb:nth-child(2n-7), .homeLeftBlurb {
+    margin: 0 0 2px;
+	}
+	.col-lg-8{
+    width: 50%;
+    float:left;
+    margin: 20px 0 0;
+    padding: 0;
+	}
+	.footerRight {
+    display: none;
+	}
+	.footerLeft {
+    text-align: center;
+    width: 100%;
+	}
+	.col-lg-12 {
+    padding: 0;
+	}
+	.col-lg-6 {
+    float: left;
+    width: 100%;
+	}
+	.signleftbox {
+    width: 40%;
+	}
+	.custom-error-message {
+    left: 40% !important;
+    right: 0 !important;
+	}
+	.errorMessageSitewideBG {
+    margin:10px 0 0 10px;
+	}
+	.container {
+    max-width: 100%;
+	}
+	.leftBlurb {
+	display:none;
+	}
+	.bookholder_UG{
+	margin:0;
+	}
+	.page-header.PHmain.ug_enzen_grid1 > h1 {
+    float: left;
+    margin-bottom: 15px;
+	}
+	.col-lg-9 {
+    padding: 0;
+	}
+	.custom-error-message {
+    float: left !important;
+    left: 0 !important;
+    padding-right: 4%;
+    right: 0 !important;
+    text-align: right;
+    width: 70% !important;
+	}
+	.successtransaction_tbl{
+	margin:10px 2%;
+	width:96%;
+	}
+	.PI_center_01, .paymentHead.paymentHead_mobcenter{
+	text-align:center;
+	}
+	.adv_paymentstar{
+    width: 69%;
+	}
+	.User_Details_SEPARATE{
+	width:100%;
+	float:left;
+	}
+	.successfullypaymentTBLgrid{
+	margin-bottom: 10px;
+	}
+}
+/**************BREAK POINT**************/
+@media only screen and (max-width: 1000px) {
+	.logo_mob{
+		padding: 6px 0;
+		max-width:100%;
+	}
+	.logo img, .bannerCurvedShadow{
+		display:none;
+	}
+	.banner > img {
+    display: none;
+	}
+	.homeUserLoginMain{
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(59,59,59,0.4);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(59,59,59,0.4);
+	box-shadow: 0px 0px 2px 1px rgba(59,59,59,0.4);
+	margin-top: 20px;
+	background: #fff none repeat scroll 0 0;
+    border-radius: 6px;
+    margin-right: 3%;
+    width: 47%;
+    float:left;
+	}
+	.homeLeftBlurb {
+    float: left !important;
+    margin-top: 0px !important;
+    width: 100%;
+    height: 80px;
+	}
+	.homeLeftBlurbImage {
+    margin-top: 10px;
+	}
+	.homeLeftBlurbTxt {
+    padding-top: 10px;
+    width: 70%;
+	}
+	.homeLeftBlurbTxt h1 {
+    padding-bottom: 0;
+    width: 100%;
+	}
+	.row {
+    margin-left: 0;
+    margin-right: 0;
+	}
+	.homeLeftBlurb:nth-child(2n-7), .homeLeftBlurb {
+    margin: 0 0 2px;
+	}
+	.col-lg-8{
+    width: 50%;
+    float:left;
+    margin: 20px 0 0;
+    padding: 0;
+	}
+	.footerRight {
+    display: none;
+	}
+	.footerLeft {
+    text-align: center;
+    width: 100%;
+	}
+	.homeUserLoginMain {
+  	min-width: 260px;
+	}
+	.homeUserLoginHead {
+    margin: 10px 0 !important;
+	}
+	.homeUserLogin_inputAreaMain {
+	margin: 0;
+	}
+	.homeUserLoginBtnMain {
+	text-align: right;
+    font-size: 15px;
+    margin-top: 10px;
+	}
+	/** Quick Pay **/
+	.col-lg-6 {
+    float: left;
+    width: 100%;
+    padding: 0;
+	}
+	.quickgrid_enz1{
+	float:left;
+	}
+	.js .slicknav_menu {
+	    margin:80px 2% 0;
+    }
+    .custom-error-message {
+    float: left !important;
+    left: 0 !important;
+    padding-right: 4%;
+    right: 0 !important;
+    text-align: right;
+    width: 73% !important;
+	}
+	.regularclass .parsley-error-list .custom-error-message {
+    position: unset !important;
+	}
+	.topWelcome {
+    margin-top: 12px;
+	}
+	.logo {
+    padding: 0;
+	}
+	label.tabs_history{
+	display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+	}
+	 label.tabs_history:hover,.resp-tab-active label.tabs_history, label.tabs_history  {
+	background-image:none;
+	}
+	
+	.rmm {
+	  width:100%;
+	  display: none;
+	  position: relative;
+	  margin: 0 auto !important;
+	  text-align: center;
+	  line-height: 8px !important;
+	  z-index: 99999;
+	  color:#3f3f3f;
+	  text-transform: uppercase !important;
+	}
+	.rmm.graphite .rmm-toggled-controls {
+	  display: none;
+	  height: 30px;
+	  color: white;
+	  text-align: left;
+	  position: relative;
+	}
+}
+/**************BREAK POINT**************/
+@media only screen and (min-width: 260px) and (max-width: 640px) {
+	.col-lg-8, .homeUserLoginMain{
+    width: 100%;
+	}
+	.homeUserLoginMain{
+    margin-right: 0;
+	}
+	.homeUserLogin_inputAreaMain {
+	margin: 0;
+	}
+	.signrightbox {
+    width:88%;
+	}
+	.signleftbox h2::before {
+    padding: 13px 0 0 0;
+	}
+	.signleftbox h2{
+	text-align: left;
+	}
+	.contact_form input, .contact_form select, .contact_form textarea {
+    width: 100%;
+	}
+	.CONSUMERSignInBtn {
+    background: #e87231 url("../Images/icons/sprite02.png") no-repeat scroll  right -7px;
+	}
+	.errorMessageSitewideBGM, .CONSUMERSignInBtn > h2 {
+    display: none;
+	}
+	.errorMessageSitewideMessageSuccessM {
+    padding: 5px 10px !important;
+    text-align: center !important;
+	}
+	.errorMessageSitewideBG {
+    display: none;
+	}
+	.errorMessageSitewideMessage {
+    text-align: center;
+	}
+	.signleftbox {
+    width: 100%;
+	}
+	.signleftbox h3, .secretQ {
+    text-align: left;
+    }
+	.contact_form input, .contact_form select, .contact_form textarea {
+    margin-top: 0;
+	}
+	.engbtn_mid_all{
+	width:244px;
+	}
+	.tooltip_button {
+	top: 5px;
+	
+	}
+	.tooltip_button_nc {
+	top: 5px;
+	right: -24px;
+	}
+	.col-lg-12.mandInfo, .commonDiv.compRegSuccMsg.msgcenter_LB{
+  	text-align: center;
+	}
+	.LogoutBtn > h2 {
+    display: none;
+	}
+	.ToggleAmountDue, .TogglePayable, .vbp_grid2 {
+    width: 29%;
+	}
+	.V_MainTable h2, .V_MainTable h2 span  {
+    font-size: 16px;
+    }
+	ul.viewBillPay span{
+	display: none;
+	}
+	.consumerTotalAmount_desc{
+	width:100%;
+	text-align: center;
+	}
+	#consumerTotalAmount, .parsley-validated {
+    width:100%;
+	}
+	.V_under1 {
+    width: 100%;
+    text-align:center;
+    float: none;
+	}
+	.fordetailpaymentI{
+	padding-top:20px;
+	margin:0 auto;
+	text-align:center;
+	}
+	.paymentthrough {
+    float: left;
+    width: 100% ;
+    padding:10px;
+	}
+	.paymentOptions select, .paymentOptions input {
+    margin: 0 !important;
+    width: 100% !important;
+	}
+	.col-lg-12.Un-RegisterConsumerscroll_holder {
+    overflow: auto;
+	}
+	.Un-RegisterConsumerMain.Un-RegisterConsumerscroller, .Un-RegisterConsumerscroller02{
+    width: 650px;
+	}
+	.cp_signleftbox, .cp_signrightbox {
+    width: 100%;
+	}
+	.cp_signleftbox h3 {
+    text-align: left;
+    margin: 10px 0;
+	}
+	.Consumernobox, .Consumernobox1, .contact_form1 select {
+    width: 100%;
+	}
+	.crsTableWrapper .col-lg-6 {
+    width: 30%!important;
+	}
+	.tranction_holderbox1, .tranction_holderbox2, #radioTest{
+	width: 100%;
+	text-align: left;
+	}
+	.custom-error-message {
+    float: left !important;
+    left: 0 !important;
+    padding-right: 4%;
+    position: static !important;
+    right: 0 !important;
+    text-align: right;
+    top: 85px !important;
+    width: 100% !important;
+	}
+	.successtransaction_tscroll{
+	width:94%;
+	overflow:auto;
+	margin:0 3%;
+	}
+	.successtransaction_tbl{
+	width:700px;
+	max-width: none;
+	}
+	.adv_paymentstar{
+    width: 96%;
+	}
+	.formDetailsMainHead.modeofPayment.modeofPayment_height {
+    margin-bottom: 15px;
+	}
+	.formDetailsMainHead.modeofPayment.modeofPayment_height > h1 {
+    line-height: normal;
+    padding-bottom: 8px;
+	}
+	.osb_moredetails{
+	text-align:center;
+	}
+	.js .slicknav_menu {
+	    margin:120px 4% 0;
+	    width: 92%;
+    }
+    .pickdateholder.hasDatepicker {
+    width: 88%;
+	}
+	.signrightbox a.crossbtn {
+	margin-top: 5px !important;
+	margin-left: 79% !important;
+	}
+	
+}
+/**************BREAK POINT END**************/
+@media only screen and (max-width: 479px) {
+	.toppergridlogo_counter{
+	width:100%;
+	}
+	.topWelcome {
+    margin-bottom: 5px;
+    margin-top: 2px;
+	}
+}
+/**************BREAK POINT END**************/

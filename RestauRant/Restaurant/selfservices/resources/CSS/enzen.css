@@ -1,0 +1,233 @@
+/*view bill and pay  modified css ends here*/
+.custom-error-message {
+	top: 0;
+	right: 0;
+	color: #f76804;
+	position: relative;
+	font-size: 13px;
+	font-weight: normal;
+	float: right;
+}
+
+/*#form-new-reg .custom-error-message {
+	top: 50px;
+	right: 217px;
+	color: #f76804;
+	position: absolute;
+	font-size: 13px;
+	font-weight: normal;
+}*/
+
+#form-new-reg1 .custom-error-message {
+	top: 50px;
+	right: 21px;
+	color: #f76804;
+	position: absolute;
+	font-size: 13px;
+	font-weight: normal;
+}
+#form-new-reg div.big-txt-area + ul.parsley-error-list > .custom-error-message {
+    float: left;
+    text-align: right;
+    width: 440px;
+}
+/*#form-new-reg div.big-txt-area+ul.parsley-error-list>.custom-error-message
+	{
+	top: 130px;
+	right: 241px;
+	left: 240px;
+	position: absolute;
+	width: 295px;
+}*/
+
+#txtarea .custom-error-message {
+	top: 90px;
+	right: 20px;
+	color: #f76804;
+	position: absolute;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+#cmplland .custom-error-message {
+	color: #f76804;
+	font-size: 13px;
+	font-weight: normal;
+}
+.regularclass .parsley-error-list .custom-error-message {
+    float: left;
+    text-align: right;
+    width: 437px;
+}
+#cmplprsn .custom-error-message, #districtdiv .custom-error-message, #cmplmbl .custom-error-message, #cmplcheck .custom-error-message, #consId .custom-error-message {
+    width: 440px;
+}
+
+#districtdiv11 .custom-error-message {
+	color: #F76804;
+	font-size: 13px;
+	font-weight: normal;
+	left: 343px;
+	position: absolute;
+	top: 50px;
+}
+/** Specific complaints error  ends **/
+.errormsg {
+	color: #f76804;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+.errorMessageSitewideMessageSuccess {
+	height: auto;
+	width: auto;
+	float: none;
+	font-size: 18px;
+	color: #0395d9;
+	padding: 11px 0 0 15px;
+}
+.errorMessageSitewideMessage {
+	height: auto;
+	width: auto;
+	float: none;
+	font-size:18px;
+	padding: 11px 15px;
+	color: #FF0000;
+}
+
+.signrightbox a.crossbtn {
+	background: url("../Images/icons/sprite02.png") scroll right -100px;
+    background-repeat:no-repeat ;
+	background-color : rgba(0, 0, 0, 0);
+	display: none;
+	float: right; 
+	position: absolute;
+	height: 22px;
+	margin-top: 20px;
+	margin-left: 160px;
+	text-indent: -9999px;
+	width: 32px;
+}
+
+.crossbox a.crossbtn {
+	background: url("../Images/icons/sprite02.png") no-repeat scroll right -12px top -103px rgba(0, 0, 0, 0);
+	background: url("../Images/icons/sprite02.png") scroll right -12px ;
+	background-repeat:no-repeat ;
+	background-position:-10px -103px;
+	background-color : rgba(0, 0, 0, 0);
+	float: right;
+	position: absolute;
+	height: 18px;
+	margin-top: 20px;
+	margin-left: 135px;
+	text-indent: -9999px;
+	width: 19px;
+	display: none;
+}
+
+.errorMessageSitewideButton {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 26px 0 16px;
+	background-repeat:no-repeat ;
+	background-position:0px -121px;
+}
+
+#amtId {
+	background: #fff;
+	color:#000;
+	padding: 3px 10px;
+    text-align: right;
+}
+
+.errorMessageSitewide a {
+
+	background-repeat:no-repeat ;
+	background-color: rgba(0, 0, 0, 0);
+	display: block;
+	float: right;
+	height: 18px;
+	margin: 5px;
+	text-indent: -9999px;
+	width: 19px;
+}
+
+.homeUserLoginHead {
+	height: 36px;
+	margin: 10px 15px 10px 15px;
+	border-bottom: solid 1px #ebebeb;
+}
+
+.scrollup {
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	bottom: 55px;
+	right: 10px;
+	display: none;
+	text-indent: -9999px;
+	background: url("../Images/icons/icon_top.png");
+}
+
+.iconcalendar {
+	background: url("../Images/icons/calender.png");
+	height: 32px;
+	width: 29px;
+	cursor: pointer;
+}
+/* ---------27-June-2014-------- */
+#marquee {
+	height: 30px;
+	line-height: 30px;
+	background: #434343;
+	color: #fff;
+	width: 100%;
+}
+
+#marquee .marquee0>div {
+	width: 100% !important;
+}
+
+#marquee .scrollText {
+	max-width: 1010px;
+	margin: 0 auto;
+}
+
+.scrollText span {
+	background: url(../css_payment/Images/icons/iconMarquee.png) no-repeat
+		left center;
+	padding: 0 20px;
+}
+/* ---------27-June-2014-------- */
+
+.topSearch a.crossbtn {
+	background: url("../Images/icons/sprite02.png") no-repeat scroll right -12px top -103px rgba(0, 0, 0, 0);
+	background: url("../Images/icons/sprite02.png") no-repeat scroll right -12px ;
+	background-repeat:no-repeat ;
+	background-position:-10px -103px;
+	background-color : rgba(0, 0, 0, 0)
+	float: right;
+	
+	height: 18px;
+	
+	text-indent: -9999px;
+	width: 19px;
+	
+}
+
+.errorMessageSitewideBGM {
+    background: url("../Images/icons/Info.png") no-repeat scroll rgba(0, 0, 0, 0);
+    float: left;
+    height: 25px;
+    margin-top: 2px;
+    width: 30px;
+}
+.errorMessageSitewideMessageSuccessM {
+    color: #0395d9;
+    float: none;
+    font-size: 18px;
+    height: auto;
+    padding: 2px 0 0 15px;
+    width: auto;
+}
