@@ -1,11 +1,409 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<title>Food Wally Grill and Restaurant</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="-1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="icon" type="image/png" href="Restaurant/img/R.JPG" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="resources/favkseb/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="resources/favkseb/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="resources/favkseb/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="resources/favkseb/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="resources/favkseb/mstile-310x310.png" />
+	
+	<link href="resources/CSS/Bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="resources/CSS/homeV12.css" rel="stylesheet" type="text/css">
+	<link href="resources/css_payment/CSS/screenV11.css" rel="stylesheet" type="text/css">
+	<link href="resources/CSS/enzen.css" rel="stylesheet" type="text/css">
+	<link href="resources/CSS/fonts.css" rel="stylesheet" type="text/css">
+	<link href="resources/CSS/Components/UI.css" rel="stylesheet" type="text/css">
+ 	<link href="resources/CSS/Components/jquery-ui.css" rel="stylesheet" /> 
+ 		 <!--  link href="/selfservices/resources/CSS/Components/fa.min.css" rel="stylesheet" /--> 
+ 	<link href="../../kit-free.fontawesome.com/releases/v5.13.0/css/free-v4-shims.min.css" media="all" rel="stylesheet">
+	 <link href="../../kit-free.fontawesome.com/releases/v5.13.0/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
+	 <link href="../../kit-free.fontawesome.com/releases/v5.13.0/css/free.min.css" media="all" rel="stylesheet">
+ 	
+	<!-- <link href="/selfservices/resources/CSS/Bootstrap/bootstrap-switch.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	-->
+	<script src="resources/JS/jquery.min.js"></script>
+	<script	src="resources/css_payment/JS/crawler.js"></script>
+	<script	src="resources/JS/jquery-migrate-1.2.1.js"></script>
+	
+	
+	
+	<!--[if !IE]>
+	<script	src="/selfservices/resources/JS/jquery-2.0.3.min.js"></script>
+	<script	src="/selfservices/resources/JS/Components/jquery-ui.js"></script>
+	<!--<![endif]-->
+
+	<!--[if lt IE 9]
+	<script src="/selfservices/resources/JSIE8/html5shiv-3.7.0.js"></script>
+	<script src="/selfservices/resources/JSIE8/respond.min.js"></script>
+	<script src="/selfservices/resources/JSIE8/IE8.js"></script>  
+	<script	src="/selfservices/resources/JSIE8/jquery-1.7.2.min.js"></script> 
+	<script	src="/selfservices/resources/JS/Components/jquery-ui.js"></script>
+	<script	src="/selfservices/resources/JavaScript_Files/selectivizr.js"></script>
+ 	<noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+ 		<script src="/selfservices/resources/JSIE8/html5shiv-3.7.0.js"></script>
+ 		-->
+	<![endif]-->
+
+	<!--[if gte IE 9]
+	<script	src="/selfservices/resources/JS/jquery-2.0.3.min.js"></script>
+	<script	src="/selfservices/resources/JS/Components/jquery-ui.js"></script>
+	<script	src="/selfservices/resources/JS/bootstrap.min.js"></script>
+	<![endif]-->
+	<script	src="resources/JS/bootstrap.min.js"></script>
+	<script	src="resources/JS/Components/jquery-ui.min.js"></script>
+	
+	
+	<script>
+		function getBroadcastMsg() {
+	
+			$.ajax({
+				type : "POST",
+				url : "getBroadcastMsg",
+				data : {
+	
+				},
+	
+				success : function(message) {
+					if (message.length > 0) {
+						var res = message.split("<<<<");
+						for ( var i = 0; i < res.length; i++) {
+							$("<span>" + res[i] + "</span>").appendTo("#crawlMarquee");
+						}
+						//mar();
+					}else{
+						$("#marquee").hide();
+					}
+				},
+				error : function(e) {
+					$("<span>Food Wally Grill and Restaurant</span>").appendTo("#crawlMarquee");
+				}
+				
+			});
+		}
+		function getReleaseVersion() {
+			$.ajax({
+				type : "POST",
+				url : "getReleaseVersion",
+				data : {
+					releaseName : "WSS",
+				},
+	
+				success : function(releaseDetail) {
+					if (releaseDetail.length > 0 || releaseDetail!=null) {
+						$("<span>" + releaseDetail + "</span>").appendTo("#releaseDtl");
+					}else{
+						$("<span>" + "Failed to get release details" + "</span>").appendTo("#releaseDtl");
+					}
+				},
+				error : function(e) {
+					$("<span>" + "Failed to get release details" + "</span>").appendTo("#releaseDtl");
+				}
+				
+			});
+		}
+		$(document).ready(function() {
+		//	getReleaseVersion();
+			getBroadcastMsg();
+		});
+	</script>
+	<!-- Navigration LB-->
+	<script src="resources/JS/mobilemenu.js"></script>
 </head>
 <body>
-    welcome my new web site
+	
+
+
+
+<div id="disJS">
+	 <noscript>JavaScript is disabled in your browser. Web Self Service application requires JavaScript to be enabled. Kindly enable JavaScript in your browser and reload the application.</noscript>
+</div>
+<div id="marquee">
+	<div id="marquee">
+		<div class="scrollText">
+			<div class="marquee" id="mycrawler">
+			   <marquee id="crawlMarquee" SCROLLAMOUNT="4" onMouseover="this.scrollAmount=0" onMouseout="this.scrollAmount=4">
+			   </marquee>
+			</div>
+		</div>
+	</div>
+</div>
+<header class="streachedContainer topper">
+	<div class="streachedWrapper">
+		<div class="row topper">
+			<div class="toppergridlogo_counter">
+				<div class="logo" style="position: relative;">
+					<a href="#"><img src="Restaurant/img/food wally logo.JPG" alt=""></a>
+				</div>
+				<div class="logo_mob">
+					<a href="#"><img src="resources/Images/misc/logo_mob.png" alt=""></a>
+				</div>
+			</div>
+			
+			<div class="toppergridlogo_counter">
+				<div class="topWelcome toll-number hidden-xs hidden-sm">
+				<a href="javascript:void(0);" style="cursor:default;text-decoration:none"> 
+				<img src="resources/Images/icons/phone_icon.png" alt="Phone number image"> 
+				<p><a href="tel:+971-2-5519904">00971-25519904 </p></a>
+				<a href="https://api.whatsapp.com/send?phone=+971567895242&amp;text=hai please place your order now"> <img style="display: inline-block;" class="face" src="Restaurant/img/whatsappn.png"></a>
+						
+				</div> 
+			
+				
+				
+				
+				<div class="topWelcome hidden-md hidden-lg">
+				<div class="site-header__social navbar-nav flex-row">
+				      <a class="nav-item nav-link" target="_blank" href="https://twitter.com/KSEBLtd"><i class="fab fa-twitter fa-lg"></i></a>
+				      <a class="nav-item nav-link" target="_blank" href="https://www.youtube.com/channel/UCAK0P7b-eQ7u5waz93Ld_Ww"><i class="fab fa-youtube fa-lg"></i></a>
+				      <a class="nav-item nav-link" target="_blank" href="https://facebook.com/ksebl"><i class="fab fa-facebook-square  fa-lg"></i></a>
+				</div>
+				</div>
+			</div>	
+			<!-- 
+			<div class="col-lg-5" style="width: 50%; visibility: hidden;">
+				<span id="releaseDtl"> </span>
+			</div>-->
+			<!-- <div class="col-lg-2 topSearchMain">
+				<div class="input-group topSearch">
+				</div>
+			</div> -->
+		</div>
+	</div>
+</header>
+	
+
+<style>
+.topNav ul li a {
+	padding: 0 12px;
+}
+</style>
+<nav >
+				<div class="rmm" >
+				
+					<ul>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"> </a></li>
+						<li><a href="#"></a></li>
+				 		<li><a href="#" target="_blank"><b>Home</b></a></li>   
+							<li><a href="https://www.instagram.com/foodwally/?igshid=18z7w3hm9vqmh" target="_blank">Menu</a></li> 
+							<li><a href="https://goo.gl/maps/vue2mhgYCbCmaJTX9" target="_blank">Location</a></li>
+					</ul>
+				</div>
+</nav>
+	
+	
+
+
+
+<script type="text/javascript" src="resources/JS/Components/slick.min.js"></script>
+<link rel="stylesheet" href="resources/CSS/Components/slick.css">
+<link rel="stylesheet" href="resources/CSS/Components/slick-theme.css">
+<link rel="stylesheet" href="resources/CSS/Components/slick_home.css">
+<script 
+	src="resources/JS/home.js"></script>	
+
+<div >
+	<div class="row" style="background:linear-gradient(to top, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);">
+		<div class="col-lg-12">
+			<div >
+				
+					
+					 <div class="center">
+
+					    <div style="padding-left:10px;"><a href="#""><img data-lazy="../../live.staticflickr.com/65535/49862096512_5e34f5f66d_c.jpg"></a></div>
+						<div style="padding-left:10px;"><img  data-lazy="../../live.staticflickr.com/65535/49859779986_2b67ed2783_c.jpg"></div>
+				   		 <div style="padding-left:10px;"><img  data-lazy="../../live.staticflickr.com/65535/49860091727_336f212b11_c.jpg"></div>
+						<div style="padding-left:10px;"><img  data-lazy="../../live.staticflickr.com/65535/49860092852_6cba6ef0ba_c.jpg"></div>
+						 <div style="padding-left:10px;"><a href="ncHome.html"><img data-lazy="../../live.staticflickr.com/65535/49859244963_f034b18149_c.jpg"></a></div>
+						
+				 <!--	   
+				 		<div style="padding-left:10px;"><img  data-lazy="/selfservices/resources/Images/banner/breakthechain.jpg"></div>
+				 	    <div style="padding-left:10px;"><img  data-lazy="/selfservices/resources/Images/banner/cl_extend.jpg"></div>
+						 <div style="padding-left:10px;"><a href="http://pg.kseb.in/ui/gc.php" target="_blank"><img data-lazy="/selfservices/resources/Images/banner/banner_03.jpg"></a></div>
+						<div style="padding-left:10px;"><img  data-lazy="/selfservices/resources/Images/banner/1912_2.jpg"></div>
+					     <div style="padding-left:10px;"><a href="https://play.google.com/store/apps/details?id=com.mobile.kseb" target="_blank"><img data-lazy="/selfservices/resources/Images/banner/mobile_app.jpg" ></a></div>
+-->
+					  </div>
+					
+			</div>
+		</div>
+		<div class="col-lg-12">
+			<div class="bannerCurvedShadow"></div>
+		</div>
+	</div>
+</div>
+	<div class="container indexPage">
+		<div class="row">
+			
+			
+			
+			
+			
+				 
+				
+						
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="cd-signin-modal js-signin-modal" id="userModal"> <!-- this is the entire modal form, including the background -->
+		<div class="cd-signin-modal__container"> <!-- this is the container wrapper -->
+			<ul class="cd-signin-modal__switcher js-signin-modal-switcher js-signin-modal-trigger">
+				<li><a href="#0" data-signin="login" data-type="login">Forgot Password</a></li>
+				<li><a href="#0" data-signin="signup" data-type="signup">Forget User Id</a></li>
+			</ul>
+
+			<div class="cd-signin-modal__block js-signin-modal-block" data-type="login" id="ForgetPassDiv"> <!-- log in form -->
+				
+			</div> <!-- cd-signin-modal__block -->
+
+			<div class="cd-signin-modal__block js-signin-modal-block" data-type="signup" > <!--forgot user id form -->
+		
+		
+		
+			</div> <!-- cd-signin-modal__block -->
+			
+			<a href="#0" id="close" class="cd-signin-modal__close js-close">Close</a>
+			
+			
+		</div> <!-- cd-signin-modal__container -->
+	</div> <!-- cd-signin-modal -->
+	
+	<script src="resources/JS/Components/placeholders.min.js"></script>
+	<script src="resources/JS/Components/forgotV2.js"></script>
+	<link href="resources/CSS/signin.css" rel="stylesheet" type="text/css">
+<link
+	href="resources/CSS/Components/jquery-confirm.min.css"
+	rel="stylesheet" type="text/css">	
+<script 
+	src="resources/JS/Components/jquery-confirm.min.js"></script>	
+	<script>
+	$(document).ready(function() {
+
+		 function getUniqueId(){
+			 $.ajax({
+				 
+					type : "POST",
+					url : "getUniqueId",
+					data : {	
+					},
+					success : function(uniqueId) {			
+						var temp = "/selfservices/simpleImg.image";
+						var uniqueId = new Date().getTime();
+						uniqueId = uniqueId+ Math.floor(Math.random() * 10000) + 10000;
+						$("#Vimage").attr("src",temp+"?uniqId="+ uniqueId);
+						document.getElementById("signin-password").value = "";						
+						$("#captchaUniqueIdHidden").val(uniqueId);
+					},
+					error : function(e) {
+					}
+				});
+		 }	 
+		 getUniqueId();
+		 	 
+   });
+	
+	function changeCaptha(){
+	
+		var temp = "/selfservices/simpleImg.image";
+		var uniqueId = new Date().getTime();
+		uniqueId = uniqueId+ Math.floor(Math.random() * 10000) + 10000;
+		$("#Vimage").attr("src",temp+"?uniqId="+ uniqueId);
+		document.getElementById("signin-password").value = "";
+		$("#captchaUniqueIdHidden").val(uniqueId);
+	}
+	
+</script>
+	
+
+	
+<div class="streachedContainer footer hidden-xs hidden-md">
+			<div class="social-media-links">
+					<a class="footer nav-link" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg"></i></a>
+				 	 <a class="footer nav-link" target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube fa-lg"></i></a>
+				      <a class="footer nav-link" target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-square  fa-lg"></i></a>
+			</div> 
+	</div>	
+	
+<footer class="streachedContainer footer" >
+	<div class="streachedWrapper">
+		<div class="footerLeft">&copy; pn</div>
+		<div class="footerRight">  </div>
+	</div>
+</footer>
+
+
+
+
+
+<script language="JavaScript">
+	/**
+	  * Disable right-click of mouse, F12 key, and save key combinations on page
+	  * By PN
+	 
+	  */
+	window.onload = function() {
+	  document.addEventListener("contextmenu", function(e){
+		e.preventDefault();
+	  }, false);
+	  document.addEventListener("keydown", function(e) {
+	  //document.onkeydown = function(e) {
+		// "I" key
+		if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+		  disabledEvent(e);
+		}
+		// "J" key
+		if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+		  disabledEvent(e);
+		}
+		// "S" key + macOS
+		if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+		  disabledEvent(e);
+		}
+		// "U" key
+		if (e.ctrlKey && e.keyCode == 85) {
+		  disabledEvent(e);
+		}
+		// "F12" key
+		if (event.keyCode == 123) {
+		  disabledEvent(e);
+		}
+	  }, false);
+	  function disabledEvent(e){
+		if (e.stopPropagation){
+		  e.stopPropagation();
+		} else if (window.event){
+		  window.event.cancelBubble = true;
+		}
+		e.preventDefault();
+		return false;
+	  }
+	};
+  </script>
+  
+
+
+
+
+
+
 </body>
+
 </html>
