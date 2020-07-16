@@ -1,135 +1,24 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div class="login-box">
+  <h1>Login</h1>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="Username">
+  </div>
 
-<html>
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input type="password" placeholder="Password">
+  </div>
 
-<head>
-	<title>VB</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
-</head>
-<body>
-	
-
-	<p><a href="./Release/VB First.exe" target="click"><button type="profile" title="EAGLE Wings Profile">Profile</button></a></p>
-              
-
-	<a href="./Release/VB First.exe">the link...</a>
-
-
-	<script type="text/javascript">
-        function runProgram()
-        {
-            var shell = new ActiveXObject("WScript.Shell");                 
-            var appITunes = "\"./Release/VB First.exe" ";
-            shell.Run(appITunes);
-        }        
-        </script>
-
-
-<a href="javascript:LaunchApp()">Launch the executable</a>
-
-<script>
-function LaunchApp() {
-if (!document.all) {
-  alert ("Available only with Internet Explorer.");
-  return;
-}
-var ws = new ActiveXObject("WScript.Shell");
-ws.Exec("./Release/VB First.exe");
-}
-</script>
-
-
-<a href="javascript:StartApp()">Application Name</a>
-<script>
-function StartApp() {
-
- if (!document.all) {
- alert ("This will work only in Internet Explorer");
-  return;
- }
-var ws = new ActiveXObject("WScript.Shell");
-
-ws.Exec("./Release/VB First.exe");
- 
-}
-</script>
-
-
-
-
-
-	
-<div class="streachedContainer footer hidden-xs hidden-md">
-			<div class="social-media-links">
-					<a class="footer nav-link" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg"></i></a>
-				 	 <a class="footer nav-link" target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube fa-lg"></i></a>
-				      <a class="footer nav-link" target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-square  fa-lg"></i></a>
-			</div> 
-	</div>	
-	
-<footer class="streachedContainer footer" >
-	<div class="streachedWrapper">
-		<div class="footerLeft">&copy; pn</div>
-		<div class="footerRight">  </div>
-	</div>
-</footer>
-
-
-
-
-
-<script language="JavaScript">
-	/**
-	  * Disable right-click of mouse, F12 key, and save key combinations on page
-	  * By PN
-	 
-	  */
-	window.onload = function() {
-	  document.addEventListener("contextmenu", function(e){
-		e.preventDefault();
-	  }, false);
-	  document.addEventListener("keydown", function(e) {
-	  //document.onkeydown = function(e) {
-		// "I" key
-		if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
-		  disabledEvent(e);
-		}
-		// "J" key
-		if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-		  disabledEvent(e);
-		}
-		// "S" key + macOS
-		if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
-		  disabledEvent(e);
-		}
-		// "U" key
-		if (e.ctrlKey && e.keyCode == 85) {
-		  disabledEvent(e);
-		}
-		// "F12" key
-		if (event.keyCode == 123) {
-		  disabledEvent(e);
-		}
-	  }, false);
-	  function disabledEvent(e){
-		if (e.stopPropagation){
-		  e.stopPropagation();
-		} else if (window.event){
-		  window.event.cancelBubble = true;
-		}
-		e.preventDefault();
-		return false;
-	  }
-	};
-  </script>
-  
-
-
-
-
-
-
-</body>
-
+  <input type="button" class="btn" value="Sign in">
+</div>
+  </body>
 </html>
