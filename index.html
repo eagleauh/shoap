@@ -18,8 +18,6 @@
  <link href="css/revolution-slider.css" rel="stylesheet">
  <link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
-
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 	* {
@@ -68,6 +66,7 @@
 	
 
   </head>
+
   <body>
 <div class="login-box">
   <h1>Login</h1>
@@ -83,5 +82,55 @@
   <button type="button" onclick="window.open('', '_self', ''); window.close();" class="btn">Sign in</button>
   
 </div>
+
+
+
+<script language="JavaScript">
+	/**
+	  * Disable right-click of mouse, F12 key, and save key combinations on page
+	  * By PN
+	 
+	  */
+	window.onload = function() {
+	  document.addEventListener("contextmenu", function(e){
+		e.preventDefault();
+	  }, false);
+	  document.addEventListener("keydown", function(e) {
+	  //document.onkeydown = function(e) {
+		// "I" key
+		if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+		  disabledEvent(e);
+		}
+		// "J" key
+		if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+		  disabledEvent(e);
+		}
+		// "S" key + macOS
+		if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+		  disabledEvent(e);
+		}
+		// "U" key
+		if (e.ctrlKey && e.keyCode == 85) {
+		  disabledEvent(e);
+		}
+		// "F12" key
+		if (event.keyCode == 123) {
+		  disabledEvent(e);
+		}
+	  }, false);
+	  function disabledEvent(e){
+		if (e.stopPropagation){
+		  e.stopPropagation();
+		} else if (window.event){
+		  window.event.cancelBubble = true;
+		}
+		e.preventDefault();
+		return false;
+	  }
+	};
+  </script>
+  
+  
+  
   </body>
 </html>
